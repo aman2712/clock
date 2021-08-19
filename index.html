@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="onLoad()" id="body">
+    <div class="container">
+      <div class="quote-section">
+        <p id="quote">
+          "Wise men talk because they have something to say; fools, because they
+          have to say something.""
+        </p>
+        <p id="quote-author">Plato</p>
+      </div>
+      <div class="main">
+        <div class="time-container">
+          <div class="greeting">
+            <img id="greeting-img" src="./images/icon-sun.svg" alt="Sun Icon" />
+            <p>GOOD <span id="greeting-type">MORNING</span>, IT'S CURRENTLY</p>
+          </div>
+          <div class="main-time">
+            <p class="time" id="time">00:00</p>
+            <p class="time-zone" id="abbrv">AAA</p>
+          </div>
+          <p class="area" id="city-country">IN LONDON, UK</p>
+        </div>
+        <div class="button" id="button">
+          <p id="btn-text">MORE</p>
+          <img id="btn-image" src="./images/icon-arrow-up.svg" alt="Arrow Up" />
+        </div>
+      </div>
+    </div>
+    <div class="extra-info" id="extra-info">
+      <div class="extra-info-left">
+        <div class="extra-timezone">
+          <p class="extra-subtitle">CURRENT TIMEZONE</p>
+          <p class="extra-title" id="timezone">Europe/London</p>
+        </div>
+        <div class="extra-day-of-year">
+          <p class="extra-subtitle">DAY OF THE YEAR</p>
+          <p class="extra-title" id="day-of-year">295</p>
+        </div>
+      </div>
+      <div class="extra-info-right">
+        <div class="extra-day-of-week">
+          <p class="extra-subtitle">DAY OF THE WEEK</p>
+          <p class="extra-title" id="day-of-week">5</p>
+        </div>
+        <div class="extra-week-number">
+          <p class="extra-subtitle">WEEK NUMBER</p>
+          <p class="extra-title" id="week-number">42</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
